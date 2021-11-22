@@ -1,0 +1,259 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.app-404 {
+  height: 100vh;
+  background-color: #2980b9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-404 {
+  background-color: #2980b9;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+  padding-top: 20px;
+}
+
+.title-404 {
+  margin-top: 20px;
+  font-size: 35px;
+  width: 600px;
+  overflow: visible;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.sub-title-404 {
+  color: #e1e1f5;
+  text-align: center;
+}
+
+.img-logo-404 {
+  height: auto;
+}
+
+.social-media-container-404 {
+  position: fixed;
+  left: 25px;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-media-container-404 > a > i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.social-media-container-404 > a > i:hover {
+  font-size: 35px;
+}
+
+.footer-404 {
+  height: auto;
+  width: 100%;
+  display: grid;
+  padding: 50px 0px;
+  background-color: rgb(21, 107, 164);
+
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-auto-rows: auto;
+}
+
+.footer-left-container-404 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 10px;
+  padding-left: 150px;
+}
+
+.footer-left-container-404 > div > h3 {
+  line-height: 40px;
+  font-size: 30px;
+  color: #f5f5f5;
+}
+
+.footer-left-container-404 > div > p {
+  line-height: 30px;
+  font-size: 16px;
+  color: #eff9fe;
+}
+
+.footer-right-container-404 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 150px;
+}
+
+.footer-right-container-404 > div > h3 {
+  line-height: 40px;
+  font-size: 30px;
+  color: #f5f5f5;
+}
+
+.footer-right-container-404 > div > p {
+  line-height: 30px;
+  font-size: 16px;
+  color: #eff9fe;
+}
+
+.img-404 {
+  width: 200px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .social-media-container-404 {
+    top: 20%;
+    padding: 0px !important;
+  }
+
+  .img-404 {
+    width: 270px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .img-404 {
+    width: 200px;
+  }
+
+  .app-404 {
+    min-height: 100vh;
+  }
+
+  .title-404 {
+    width: 400px;
+    font-size: 25px;
+  }
+
+  .footer-404 {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-gap: 0px;
+    padding-top: 15px;
+  }
+
+  .footer-404 > div {
+    margin-top: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .footer-right-container-404 {
+    justify-content: flex-start;
+    line-height: 30px;
+
+    padding: 0px;
+  }
+
+  .footer-right-container-404 > div > h3 {
+    font-size: 20px;
+  }
+
+  .footer-right-container-404 > div > p {
+    font-size: 16px;
+  }
+
+  .footer-left-container-404 {
+    justify-content: flex-start;
+    line-height: 30px;
+
+    padding: 0px;
+  }
+
+  .footer-left-container-404 > div > h3 {
+    font-size: 20px;
+  }
+
+  .footer-left-container-404 > div > p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .img-404 {
+    width: 200px;
+  }
+
+  .img-logo-404 {
+    width: 60%;
+  }
+
+  .footer-404 {
+    padding-bottom: 30px;
+    padding: 5px 15px;
+  }
+
+  .title-404 {
+    width: 250px;
+    font-size: 24px;
+  }
+
+  .social-media-container-404 {
+    height: 40px;
+    flex-direction: row;
+    left: initial;
+    margin-top: 20px !important;
+    top: initial;
+    position: relative;
+    justify-content: center;
+  }
+
+  .footer-right-container-404 > div > h3 {
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .footer-right-container-404 > div > p {
+    line-height: 20px;
+    font-size: 13px;
+  }
+
+  .footer-left-container-404 > div > p {
+    line-height: 20px;
+    font-size: 13px;
+  }
+
+  .footer-left-container-404 > div > h3 {
+    line-height: 20px;
+    font-size: 16px;
+  }
+}
+
+.default-btn-one {
+  display: inline-block;
+  padding: 13px 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+  background-color: #2980b9;
+  border: 1px solid #2980b9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.default-btn-one:hover {
+  background-color: #ffffff;
+  color: #2980b9;
+}
