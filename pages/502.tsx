@@ -2,10 +2,7 @@ export default function BadGateway() {
   return (
     <div className="app-502">
       <div className="header-502">
-        <img
-          className="img-logo-502"
-          src="https://www.moc.gov.kh/_next/static/images/moclogo1-df0ca21f8bc9107e1f27db61784b359a.png"
-        />
+        <img className="img-logo-502" src="/moclogo1.png" />
       </div>
 
       <h1 className="title-502">ERROR 502: BAD GATEWAY</h1>
